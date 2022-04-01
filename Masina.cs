@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LibrarieModele
 {
-    internal class Masina
+    public class Masina
     {
         //constante
         private const char SEPARATOR_PRINCIPAL_FISIER = ';';
@@ -56,7 +56,7 @@ namespace LibrarieModele
             model = dateFisier[MODEL];
             an_fabricatie = dateFisier[AN_FABRICATIE];
             culoare = dateFisier[CULOARE];
-            //disponibilitate = dateFisier[DISPONIBILITATE];
+            disponibilitate = Convert.ToBoolean(dateFisier[DISPONIBILITATE]);
         }
         public string ConversieLaSir_PentruFisier()
         {
